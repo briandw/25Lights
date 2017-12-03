@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fH5-wA-Z3k" customClass="LEDView">
+                                <rect key="frame" x="67" y="349" width="240" height="201"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="UgZ-fF-xZF"/>
+                                    <constraint firstAttribute="width" constant="240" id="cQs-0I-ZTW"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gHM-ec-Ysi">
+                                <rect key="frame" x="67" y="47" width="240" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="Bk2-gJ-zgJ"/>
+                                    <constraint firstAttribute="width" constant="240" id="Haw-CI-PWQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fH5-wA-Z3k" secondAttribute="bottom" constant="117" id="00X-1p-gVm"/>
+                            <constraint firstItem="gHM-ec-Ysi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NL9-Qe-n4z"/>
+                            <constraint firstItem="fH5-wA-Z3k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dXX-R5-i3y"/>
+                            <constraint firstItem="gHM-ec-Ysi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="gN1-HX-Y5S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ledView" destination="fH5-wA-Z3k" id="7xF-33-fSr"/>
+                        <outlet property="preview" destination="gHM-ec-Ysi" id="nFA-Fd-JqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="114.69265367316342"/>
+        </scene>
+    </scenes>
+</document>
